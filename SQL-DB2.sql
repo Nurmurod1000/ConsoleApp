@@ -12,8 +12,8 @@ SELECT * FROM Student;
 GO
 
 CREATE PROCEDURE sp_AddStudent
-    @Ism NVARCHAR(50),
-    @Familiya NVARCHAR(50),
+    @Ism NVARCHAR(30),
+    @Familiya NVARCHAR(40),
     @Yosh INT
 AS
 BEGIN
@@ -57,4 +57,5 @@ BEGIN
     DELETE FROM Student WHERE Id = @Id
 END
 GO
+
 
